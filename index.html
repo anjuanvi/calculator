@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="main-body">
+        <div class="calculator">
+            <div class="ouput">
+                <input type="text" id="screen" readonly>
+            </div>
+            <button class="numbers" onclick="clearDisplay()">c</button>
+            <div class="buttons">
+                <div class="btn">
+                    <button onclick="btnClick(7)" class="numbers">7</button>
+                    <button onclick="btnClick(8)" class="numbers">8</button>
+                    <button onclick="btnClick(9)" class="numbers">9</button>
+                    <button onclick="operationClick('/')" class="numbers">/</button>
+
+
+
+                </div>
+                <div class="btn">
+                    <button onclick="btnClick(4)" class="numbers">4</button>
+                    <button onclick="btnClick(5)" class="numbers">5</button>
+                    <button onclick="btnClick(6)" class="numbers">6</button>
+                    <button onclick="operationClick('*')" class="numbers">x</button>
+
+
+
+                </div>
+                <div class="btn">
+                    <button onclick="btnClick(1)" class="numbers">1</button>
+                    <button onclick="btnClick(2)" class="numbers">2</button>
+                    <button onclick="btnClick(3)" class="numbers">3</button>
+                    <button onclick="operationClick('+')" class="numbers">+</button>
+
+
+
+                </div>
+                <div class="btn">
+                    <button onclick="btnClick('.')" class="numbers">.</button>
+                    <button onclick="btnClick(0)" class="numbers">0</button>
+                    <button onclick="operationClick('-')" class="numbers">-</button>
+                    <button onclick="calculate()" class="numbers">=</button>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
